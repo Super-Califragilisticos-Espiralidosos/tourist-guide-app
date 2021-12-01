@@ -1,14 +1,10 @@
 import Establishment from "../../types/Establishment";
-import { Container, Grid, Paper, Typography } from "@material-ui/core";
-import Store from "@material-ui/icons/Store";
+import { Container, Grid } from "@material-ui/core";
 import ScheduleIcon from '@material-ui/icons/Schedule';
 import { Link } from "react-router-dom";
-
 import CssBaseline from '@material-ui/core/CssBaseline';
-
-import './index.css'
 import React from "react";
-import { title } from "process";
+import './index.css';
 
 interface EstablishmentPreviewProps {
     establishment: Establishment;
@@ -60,34 +56,32 @@ const EstablishmentPreview: React.FC<EstablishmentPreviewProps> = (props) => {
                 <div>
                     <Grid container>
                         <Grid item xs={12} sm={12} md={12}>
-                            <div className={"one"}>
-                                <div className={"two"}>
-                                    <div className={"three"}>
-                                        <img className={"icon"} src={imageUrl} alt={props.establishment.titulo} />
+                            <Link to={`/establishment?id=${props.establishment._id}`} style={{ textDecoration: 'none' }}>
+                                <div className={"one"}>
+                                    <div className={"two"}>
+                                        <div className={"three"}>
+                                            <img className="icon" src={imageUrl} alt={props.establishment.titulo} />
+                                        </div>
+                                        <p className={"six"}>
+                                            {type}
+                                        </p>
+                                        <div className={"seven"}>
+                                            {name}
+                                        </div>
                                     </div>
-                                    <p className={"six"}>
-                                        {type}
-                                    </p>
-                                    <div className={"seven"}>
-                                       {name}
+                                    <div className={"four"}>
+                                        <div className={"five"}>
+                                            <ScheduleIcon />
+                                            {schedule}
+                                        </div>
                                     </div>
-
                                 </div>
-                                <div className={"four"}>
-                                    <div className={"five"}>
-                                        <ScheduleIcon />
-                                        {schedule}
-                                    </div>
-                                </div>
-                            </div>
+                            </Link>
                         </Grid>
                     </Grid>
                 </div>
             </Container>
-
-
         </React.Fragment>
-
     );
 };
 

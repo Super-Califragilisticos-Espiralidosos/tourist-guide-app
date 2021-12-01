@@ -4,8 +4,6 @@
 }
 
 .MuiPaper-root.MuiAppBar-root.MuiAppBar-positionFixed.MuiAppBar-colorPrimary.mui-fixed.MuiPaper-elevation4 {
-/* .MuiAppBar-colorPrimary { */
-    /* color: #fff;'/ */
     color: #c6c6c6;
     background-color: white;
 }
