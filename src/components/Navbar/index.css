@@ -1,0 +1,21 @@
+.MuiPaper-root.MuiAppBar-root.MuiAppBar-positionFixed.MuiAppBar-colorPrimary.mui-fixed.MuiPaper-elevation0 {
+  background-color: transparent;
+  color: black;
+}
+
+.MuiPaper-root.MuiAppBar-root.MuiAppBar-positionFixed.MuiAppBar-colorPrimary.mui-fixed.MuiPaper-elevation4 {
+/* .MuiAppBar-colorPrimary { */
+    /* color: #fff;'/ */
+    color: #c6c6c6;
+    background-color: white;
+}
+
+.headerFont {
+  color: #3c4858;
+  min-height: auto;
+  font-weight: 100;
+  text-decoration: none;
+  line-height: 1.5em;
+  font-size: 1.5em;
+  letter-spacing: normal !important;
+}
