@@ -22,9 +22,13 @@ class EstablishmentList extends React.Component<{}, ListEstablishmenState> {
    */
   render() {
     var establishmentsList: any[] = [];
-    this.state.establishments.forEach((establishment) => {
+    if(this.state.establishments === undefined){
+      establishmentsList = []
+    } else{
+      this.state.establishments.forEach((establishment) => {
         establishmentsList.push(<EstablishmentPreview establishment={establishment} />);
     });
+    }
     return establishmentsList;
   }
 
