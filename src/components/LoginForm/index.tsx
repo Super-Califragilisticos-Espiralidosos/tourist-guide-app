@@ -13,9 +13,13 @@ import { VisibilityOff, Visibility } from '@material-ui/icons';
 
 interface LoginProps {
   username: string;
+  usernameError: boolean;
+  usernameErrorText: string;
   password: string;
   passwordError: boolean;
+  passwordErrorText: string;
   showPassword: boolean;
+  enableSubmit: boolean;
   authenticationFailed: boolean;
   onUsernameChange(event: any): void;
   onPasswordChange(event: any): void;
