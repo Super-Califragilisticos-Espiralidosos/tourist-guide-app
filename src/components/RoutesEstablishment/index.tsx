@@ -1,6 +1,8 @@
-import { Routes ,Route } from 'react-router-dom';
+import { Switch ,Route } from 'react-router-dom';
 import EstablishmentDetail from '../../containers/EstablishmentDetail';
 import EstablishmentList from "../../containers/EstablishmentList";
+import LoginPage from '../../containers/LoginPage';
+import ProtectedRoute from '../ProtectedRoutes';
 
 /**
  * Routes
@@ -8,10 +10,11 @@ import EstablishmentList from "../../containers/EstablishmentList";
  */
 const RoutesEstablishment = () => {
     return (
-        <Routes>
-            <Route path='/' element={<EstablishmentList/>} />
-            <Route path="/establishment" element={<EstablishmentDetail/>}/>
-        </Routes>
+        <Switch>
+            <Route path="/" component={LoginPage} exact/>
+            <ProtectedRoute path="/establishments" component={EstablishmentList}/>
+            <ProtectedRoute path="/establishment" component={EstablishmentDetail}/>
+        </Switch>
     );
 };
 

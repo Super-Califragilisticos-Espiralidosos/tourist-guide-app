@@ -52,26 +52,26 @@ const EstablishmentPreview: React.FC<EstablishmentPreviewProps> = (props) => {
     return (
         <React.Fragment>
             <CssBaseline />
-            <Container>
-                <div>
-                    <Grid container>
-                        <Grid item xs={12} sm={12} md={12}>
-                            <Link to={`/establishment?id=${props.establishment._id}`} style={{ textDecoration: 'none' }}>
-                                <div className={"one"}>
-                                    <div className={"two"}>
-                                        <div className={"three"}>
+            <Container id="establishments-container">
+                <div id="establishments-container-preview">
+                    <Grid id="establishments-grid-container" container>
+                        <Grid id="establishments-grid-item" item xs={12} sm={12} md={12}>
+                            <Link id="link-to-establishment" to={`/establishment?id=${props.establishment._id}`} style={{ textDecoration: 'none' }}>
+                                <div id="establishments-preview" className={"one"}>
+                                    <div id="establishments-preview-info" className={"two"}>
+                                        <div id="establishments-image" className={"three"}>
                                             <img className="icon" src={imageUrl} alt={props.establishment.titulo} />
                                         </div>
-                                        <p className={"six"}>
+                                        <p id="establishments-type" className={"six"}>
                                             {type}
                                         </p>
-                                        <div className={"seven"}>
+                                        <div id="establishments-name" className={"seven"}>
                                             {name}
                                         </div>
                                     </div>
-                                    <div className={"four"}>
-                                        <div className={"five"}>
-                                            <ScheduleIcon />
+                                    <div id="establishments-preview-info-2" className={"four"}>
+                                        <div id="establishments-schedule" className={"five"}>
+                                            <ScheduleIcon id="schedule"/>
                                             {schedule}
                                         </div>
                                     </div>

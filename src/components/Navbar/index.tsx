@@ -1,7 +1,6 @@
 import "./index.css";
 import * as React from "react";
 import {
-    Typography,
     AppBar,
     Toolbar,
     CssBaseline,
@@ -10,10 +9,6 @@ import {
 import PersonPinCircleIcon from '@material-ui/icons/PersonPinCircle';
 
 interface Props {
-    /**
-     * Injected by the documentation to work in an iframe.
-     * You won't need it on your project.
-     */
     window?: () => Window;
     children: React.ReactElement;
 }
@@ -40,12 +35,12 @@ const NavigationBar = () => {
         <React.Fragment>
             <CssBaseline />
             <ElevationScroll>
-                <AppBar>
-                    <Toolbar>
-                        <div style={{ height: "2.4rem", width: "2.4rem" }}>
-                            <PersonPinCircleIcon style={{ height: "100%", width: "100%" }} />
+                <AppBar id="appbar-navbar">
+                    <Toolbar id="toolbar-navbar">
+                        <div id="establishments-logo" style={{ height: "2.4rem", width: "2.4rem" }}>
+                            <PersonPinCircleIcon id="logo" style={{ height: "100%", width: "100%" }} />
                         </div>
-                        <div className={"headerFont"}>
+                        <div id="page-name" className={"headerFont"}>
                             Tourist Guide
                         </div>
                     </Toolbar>

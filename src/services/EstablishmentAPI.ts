@@ -1,7 +1,9 @@
 import axios from 'axios';
 
+const baseURL = process.env.REACT_APP_ESTABLISHMENT_API;
+
 const EstablishmentAPI = axios.create({
-    baseURL: 'https://tourist-guide-api.herokuapp.com/places',
+    baseURL: baseURL,
     responseType: 'json'
 });
 
