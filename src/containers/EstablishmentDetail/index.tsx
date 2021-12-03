@@ -22,7 +22,7 @@ class EstablishmentDetail extends React.Component<{}, EstablishmentState> {
      */
     render() {
         return (
-            <EstablishmentInfo establishment={this.state.establishment}/>
+            <EstablishmentInfo establishment={this.state.establishment} />
         )
     }
 

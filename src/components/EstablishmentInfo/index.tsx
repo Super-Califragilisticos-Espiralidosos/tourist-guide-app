@@ -56,9 +56,8 @@ const EstablishmentInfo: React.FC<EstablishmentInfoProps> = (props) => {
                 </Grid>
               </div>
             </div>
-            <div>
-              {/* TO DO 
-              GOOGLE MAPS API */}
+            <div style={{marginLeft: "auto", marginRight: "auto"}}>
+              <img src={"https://www.daddydesign.com/wp-content/uploads/2015/01/Reposition-Google-Business-Map-Marker.jpg"}/>
             </div>
           </div>
         </Grid>

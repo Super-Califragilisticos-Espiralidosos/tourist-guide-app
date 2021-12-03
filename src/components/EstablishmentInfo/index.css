@@ -45,7 +45,7 @@
   border-radius: 6px;
   margin-bottom: 30px;
   flex-direction: column;
-  height: 1000px;
+  height: 1100px;
 }
 
 .seven-i {
@@ -145,4 +145,9 @@
 #info {
   color: rgb(148, 148, 148);
   margin-left: 10px;
+}
+
+.img{
+  margin-left: auto;
+  margin-right: auto;
 }
